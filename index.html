@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Carro</title>
+    <link rel="stylesheet" href="crud.css">
+<body>
+    <main class="container">
+        <div class="lateral">
+            <form action="" class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="registro" placeholder="Fulano Da Silva" required>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="registro" placeholder="111.222.333-44" required>
+                <label for="carro">Carro</label>
+                <input type="text" name="carro" id="carro" class="registro" placeholder="FordKa" required>
+                <label for="placa">Placa do Carro</label>
+                <input type="text" name="placa" id="placa" class="registro" placeholder="xyz000" required>
+                <label for="data1" class="label"><h4>Data de retirada</h4></label>
+                <input type="date" name="data1" id="dataR" class="registro" required>
+                <label for="data2" class="label"><h4>Data de devolucao</h4></label>
+                <input type="date" name="data2" id="dataD" class="registro" required>
+                <input type="submit" id="salvar" class="button">
+            </form>
+        </div>
+        <div class="tabela">
+            <table id="tableClient">
+                <thead>
+                    <tr>
+                        <th><h2>Nome</h2></th>
+                        <th><h2>CPF</h2></th>
+                        <th><h2>Carro</h2></th>
+                        <th><h2>Placa</h2></th>
+                        <th><h2>Data de Retirada</h2></th>
+                        <th><h2>Data de Devolução</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="crud.js"></script>
+</body>
+</html>
