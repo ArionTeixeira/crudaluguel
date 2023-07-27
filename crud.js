@@ -1,9 +1,14 @@
+window.onload = function(){
+    criarTabela()
+}
+
 const form = document.querySelector('form')
 const botao = document.querySelector('.button')
 const excluir = document.querySelector('.fa')
 form.addEventListener('submit', (e) =>{
     e.preventDefault()
     salvarCliente()
+    limparCampos()
 })
 
 
@@ -36,6 +41,15 @@ function salvarCliente(){
     }
     criarClient(client)
     criarTabela()
+}
+
+function limparCampos(){
+    document.querySelector('#nome').value = ''
+    document.querySelector('#cpf').value = ''
+    document.querySelector('#carro').value = ''
+    document.querySelector('#placa').value = ''
+    document.querySelector('#dataR').value = ''
+    document.querySelector('#dataD').value = ''
 }
 
 function criarTabela(){
